@@ -2,9 +2,17 @@
 //version: as if I was in the maze myself
 
 let maze4 = [
-[' ', ' '],
-[' ', 'e']
+    [' ', ' '],
+    [' ', 'e']
 ]
+
+let maze5 = [
+    [' ',' ',' '],
+    ['*',' ','*'],
+    [' ',' ','e']
+]
+
+
 
 let mySmallMaze = [
     [' ', ' ', ' '],
@@ -90,28 +98,34 @@ function findMazeExit(maze, row=0, column=0, visited=[]){
   
   
   
- //findMazeExit([[]])
-  //console.log(findMazeExit([[]]))
-  
-  
-  //findMazeExit([[e]]) //base maze
-  //console.log(findMazeExit([['e']]))
-  
-  
-  //findMazeExit([[' ','e']])
-  //console.log(findMazeExit([[' ','e']]))
-  
-  
-  //findMazeExit([[' ',' ','e']])
-  //console.log(findMazeExit([[' ',' ','e']]))
-  
-  
-  //findMazeExit([[' ',' ',' ','e']])
-  //console.log(findMazeExit([[' ',' ',' ','e']]))
-  
-  
-  //findMazeExit(maze4)
-  //console.log(findMazeExit(maze4))
-  
-  //findMazeExit(mySmallMaze)
-  console.log(findMazeExit(myBigMaze))
+//findMazeExit([[]])
+//console.log(findMazeExit([[]]))
+
+
+//findMazeExit([[e]]) //base maze
+//console.log(findMazeExit([['e']]))
+
+
+//findMazeExit([[' ','e']])
+//console.log(findMazeExit([[' ','e']]))
+
+
+//findMazeExit([[' ',' ','e']])
+//console.log(findMazeExit([[' ',' ','e']]))
+
+
+//findMazeExit([[' ',' ',' ','e']])
+//console.log(findMazeExit([[' ',' ',' ','e']]))
+
+
+//findMazeExit(maze4)
+//console.log(findMazeExit(maze4))
+
+//findMazeExit(mySmallMaze)
+//console.log(findMazeExit(myBigMaze))
+
+
+//findMazeExit(maze5)
+console.log(findMazeExit(maze5))
+
+
