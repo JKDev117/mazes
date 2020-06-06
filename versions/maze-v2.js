@@ -72,21 +72,25 @@ function findMazeExit(maze, row=0, column=0, visited=[]){
         //Right
         if(checkRight) { 
             return findMazeExit(maze, row, column + 1, visited)
+            //
         }
             
         //Down
         if(checkDown){ 
             return findMazeExit(maze, row+1, column, visited)
+            //
         }
 
         //Left
         if(checkLeft){
             return findMazeExit(maze, row, column-1, visited)
+            //
         }
 
         //Up
         if(checkUp){
             return findMazeExit(maze, row-1, column, visited)
+            //
         }
 
         console.log('Scotty, beam me up!')
