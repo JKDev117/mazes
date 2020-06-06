@@ -1,5 +1,12 @@
 //22.2 assignment Q9
-//version: prints out 2 solutions with correct paths
+
+let baseMaze = [['e']]
+
+let maze1 = [[' ', 'e']]
+
+let maze2 = [[' ', ' ','e']]
+
+let maze3 = [[' ',' ',' ','e']]
 
 let maze4 = [
     [' ', ' '],
@@ -11,8 +18,6 @@ let maze5 = [
     ['*',' ','*'],
     [' ',' ','e']
 ]
-
-
 
 let mySmallMaze = [
     [' ', ' ', ' '],
@@ -60,46 +65,17 @@ function findMazeExit(maze, row=0, column=0, path=[]){
         if(row > 0){
             findMazeExit(maze, row-1, column, [...path, 'U'])
         }
-         
-    
 
+        maze[row][column]=' '
     }
-
-
 
 }
   
   
-  
-  
-//findMazeExit([[]])
-//console.log(findMazeExit([[]]))
 
-
-//findMazeExit([[e]]) //base maze
-//console.log(findMazeExit([['e']]))
-
-
-//findMazeExit([[' ','e']])
-//console.log(findMazeExit([[' ','e']]))
-
-
-//findMazeExit([[' ',' ','e']])
-//console.log(findMazeExit([[' ',' ','e']]))
-
-
-//findMazeExit([[' ',' ',' ','e']])
-//console.log(findMazeExit([[' ',' ',' ','e']]))
-
-
-//findMazeExit(maze4)
-//console.log(findMazeExit(maze4))
-
-//findMazeExit(mySmallMaze)
 findMazeExit(myBigMaze)
 
 
-//findMazeExit(maze5)
-//onsole.log(findMazeExit(maze5))
+
 
 
